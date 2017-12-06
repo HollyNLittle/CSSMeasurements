@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Measurements</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="MyStyles.css">
+</head>
+<body>
+    <header>
+        <h1>CSS MEASUREMENTS</h1>
+        <h4>rem, em, vh and vw</h4>
+    </header>
+    <div class="container">
+        <hr>
+        <h2>Two rem</h2>
+        <ul class="two-rem">
+            <li>
+                Pixels are fixed.
+            </li>
+            <li>
+                Rem and em are relative.
+            </li>
+            <li>
+                Rem/em can be controlled by the user in the browser settings, appearance, font-size.
+            </li>
+            <li>
+                Rem/em are multipliers and can be used on elements other than text.
+            </li>
+        </ul>
+
+        <hr>
+        <h2>Three rem</h2>
+        <ul class="three-rem">
+            <li>
+                Pixels are fixed. 2rem
+            </li>
+            <li>
+                Rem and em are relative. 4rem
+            </li>
+            <li>
+                Rem/em can be controlled by the user in the browser settings, appearance, font-size. 2em
+            </li>
+            <li>
+                Rem/em are multipliers and can be used on elements other than text. 4em
+            </li>
+        </ul>
+        <p id="thin">
+            Rem is relative to the root element, (the HTML element) which is by default, 16px. 1rem = 16px.
+            Rem is a multiplier, if set font size of body text to 10px,
+            then 2 rem will be 20 pixels, can use decimals, 1.5rem will be 15 pixels and 6rem would be 60 pixels. Rem can be used for other elements as a
+            multiplier, border:1rem or 16 pixels or use decimals border:0.5rem would be 8 pixels.
+
+
+        </p>
+        <hr>
+        <br>
+        <p id="thick">
+            Em is relative to the parent element.  Font-size 10px as the parent.
+            If parent element has a fixed, defined size, like 15px, then that will override rem/em.
+        </p>
+        <hr>
+        <h2 class="twenty-vh">height:20vh/width: 20vw</h2>
+
+        <ul class="one-and-a-half-rem">
+            <li>
+                VH/VW are viewpoint height/viewpoint width
+            </li>
+            <li>
+                20vh would be 20/100 viewpoint heights
+            </li>
+            <li>
+                100VH/VW = 100% of screen
+            </li>
+            <li>
+                50VH = half of the page horizontally
+            </li>
+            <li>
+                50VW = half of the page vertically
+            </li>
+        </ul>
+        <hr>
+        <br>
+        <h2 class="twenty-wh">height:40vh/width: 60vw</h2>
+        <ul class="one-and-a-half-rem">
+            <li>
+                VH/VW are viewpoint height/viewpoint width
+            </li>
+            <li>
+                20vh would be 20/100 viewpoint heights
+            </li>
+            <li>
+                100VH/VW = 100% of screen
+            </li>
+            <li>
+                50VH = half of the page horizontally
+            </li>
+            <li>
+                50VW = half of the page vertically
+            </li>
+        </ul>
+
+
+    </div>
+</body>
+</html>
